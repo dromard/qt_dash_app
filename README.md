@@ -1,12 +1,13 @@
 # qt_dash_app
-Make great dashbords in python QT using Dash and bundles it in an application using pyinstaller. 
-This repo is an example of a QT application that embeds a Dash dashboard and that can be then bundled into a portable application.
-It then integrates the power a python web dashbords into a the most known GUI python application python QT. Indeed making data visualization in QT can be tricky and mixing these two technologies can help a lot.
+Make great dashbords in QT for python using Dash and bundles it in an application using pyinstaller. 
+This repo is an example of a QT for pytho, application that embeds a Dash dashboard and that can be then bundled into a portable application.
+It then integrates the power a python web dashbord into a the most known GUI python application python QT. Indeed making data visualization in QT for pytho, can be tricky and mixing these two technologies can help a lot.
+Dash allows to make amazing dashboards and offer a large set of codes see thair app galery https://dash-gallery.plotly.host/Portal/.
 Furthermore,in order to share easely the work, the code shows how to integrate it into a portable application by using pyinstaller.
 
 # How it works
 
-To integrate Dash into the Qt application we create a thread for the Dash web application and then using the QWebEngineView a widget that allows to display web content, we integrate it into the QT application: The QWebEngineView pointing to the adress of the Dash web app.
+To integrate Dash into the Qt application we create a thread for the Dash web application and then using the QWebEngineView a widget that allows to display web content, we integrate it into the QT application: the QWebEngineView pointing to the adress of the Dash web app.
 
 In order to bundle everything in an excecutable, we created multiple hooks as pyinstaller (see hook directory and modifcation in the .spec file) is unable to find all the hidden imports. We also had to change some setting of pyinstaller: we increased in the .spec file the number of recursions limit and made some modifications in the config file of pyinstaller.
 
